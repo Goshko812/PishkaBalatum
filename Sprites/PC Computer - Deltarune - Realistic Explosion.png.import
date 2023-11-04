@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cf5xdhrsr51md"
-path="res://.godot/imported/craiyon_164654_pixel_art_ground_texture.png-1b4dd0d792ea17a1f42d12a374eb3224.ctex"
+uid="uid://cd23sbowcsais"
+path="res://.godot/imported/PC Computer - Deltarune - Realistic Explosion.png-e0651958c872eb4c9ffc7fa425cef67c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://craiyon_164654_pixel_art_ground_texture.png"
-dest_files=["res://.godot/imported/craiyon_164654_pixel_art_ground_texture.png-1b4dd0d792ea17a1f42d12a374eb3224.ctex"]
+source_file="res://Sprites/PC Computer - Deltarune - Realistic Explosion.png"
+dest_files=["res://.godot/imported/PC Computer - Deltarune - Realistic Explosion.png-e0651958c872eb4c9ffc7fa425cef67c.ctex"]
 
 [params]
 

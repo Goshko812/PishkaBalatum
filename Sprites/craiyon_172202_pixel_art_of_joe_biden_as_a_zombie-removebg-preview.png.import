@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://h3npsvesujtd"
-path="res://.godot/imported/craiyon_172202_pixel_art_of_joe_biden_as_a_zombie-removebg-preview.png-2cecec6ccc49482ca6305e1c38ba4151.ctex"
+path="res://.godot/imported/craiyon_172202_pixel_art_of_joe_biden_as_a_zombie-removebg-preview.png-1d99429f51795c9f139c9104abaafa5a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://craiyon_172202_pixel_art_of_joe_biden_as_a_zombie-removebg-preview.png"
-dest_files=["res://.godot/imported/craiyon_172202_pixel_art_of_joe_biden_as_a_zombie-removebg-preview.png-2cecec6ccc49482ca6305e1c38ba4151.ctex"]
+source_file="res://Sprites/craiyon_172202_pixel_art_of_joe_biden_as_a_zombie-removebg-preview.png"
+dest_files=["res://.godot/imported/craiyon_172202_pixel_art_of_joe_biden_as_a_zombie-removebg-preview.png-1d99429f51795c9f139c9104abaafa5a.ctex"]
 
 [params]
 

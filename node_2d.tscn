@@ -1,10 +1,10 @@
 [gd_scene load_steps=8 format=3 uid="uid://gsys3c1vq56"]
 
-[ext_resource type="Texture2D" uid="uid://cf5xdhrsr51md" path="res://craiyon_164654_pixel_art_ground_texture.png" id="1_o4ikn"]
-[ext_resource type="Texture2D" uid="uid://b8whna43ck2tn" path="res://craiyon_165119_pixel_art_obama_with_a_gun-removebg-preview.png" id="2_mcges"]
+[ext_resource type="Texture2D" uid="uid://cf5xdhrsr51md" path="res://Sprites/craiyon_164654_pixel_art_ground_texture.png" id="1_5gpt2"]
 [ext_resource type="Script" path="res://CharacterBody2D.gd" id="2_wurlg"]
+[ext_resource type="Texture2D" uid="uid://b8whna43ck2tn" path="res://Sprites/craiyon_165119_pixel_art_obama_with_a_gun-removebg-preview.png" id="3_p81q3"]
 [ext_resource type="Script" path="res://CharacterBody2D2.gd" id="4_avvu8"]
-[ext_resource type="Texture2D" uid="uid://h3npsvesujtd" path="res://craiyon_172202_pixel_art_of_joe_biden_as_a_zombie-removebg-preview.png" id="5_mhkiy"]
+[ext_resource type="Texture2D" uid="uid://h3npsvesujtd" path="res://Sprites/craiyon_172202_pixel_art_of_joe_biden_as_a_zombie-removebg-preview.png" id="5_x3ltq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qi66j"]
 size = Vector2(158, 214)
@@ -17,13 +17,13 @@ size = Vector2(138, 214)
 [node name="Craiyon164654PixelArtGroundTexture" type="Sprite2D" parent="."]
 position = Vector2(-0.999899, 2.67029e-05)
 scale = Vector2(2.31641, 2.37305)
-texture = ExtResource("1_o4ikn")
+texture = ExtResource("1_5gpt2")
 
 [node name="Player" type="CharacterBody2D" parent="."]
 script = ExtResource("2_wurlg")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
-texture = ExtResource("2_mcges")
+texture = ExtResource("3_p81q3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2(6, 6)
@@ -36,7 +36,7 @@ position = Vector2(806, -413)
 script = ExtResource("4_avvu8")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D2" groups=["mobs"]]
-texture = ExtResource("5_mhkiy")
+texture = ExtResource("5_x3ltq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2" groups=["mobs"]]
 position = Vector2(1, 21)

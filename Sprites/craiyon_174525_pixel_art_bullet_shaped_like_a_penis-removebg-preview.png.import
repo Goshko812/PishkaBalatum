@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0ugv5ee214ku"
-path="res://.godot/imported/craiyon_174525_pixel_art_bullet_shaped_like_a_penis-removebg-preview.png-e83ff7a35c25b1c32a0715b03fffc1cf.ctex"
+path="res://.godot/imported/craiyon_174525_pixel_art_bullet_shaped_like_a_penis-removebg-preview.png-d87bcf0bb7285e583d3c2352f14514e0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://craiyon_174525_pixel_art_bullet_shaped_like_a_penis-removebg-preview.png"
-dest_files=["res://.godot/imported/craiyon_174525_pixel_art_bullet_shaped_like_a_penis-removebg-preview.png-e83ff7a35c25b1c32a0715b03fffc1cf.ctex"]
+source_file="res://Sprites/craiyon_174525_pixel_art_bullet_shaped_like_a_penis-removebg-preview.png"
+dest_files=["res://.godot/imported/craiyon_174525_pixel_art_bullet_shaped_like_a_penis-removebg-preview.png-d87bcf0bb7285e583d3c2352f14514e0.ctex"]
 
 [params]
 
