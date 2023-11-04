@@ -1,0 +1,43 @@
+[gd_scene load_steps=8 format=3 uid="uid://gsys3c1vq56"]
+
+[ext_resource type="Texture2D" uid="uid://cf5xdhrsr51md" path="res://craiyon_164654_pixel_art_ground_texture.png" id="1_o4ikn"]
+[ext_resource type="Texture2D" uid="uid://b8whna43ck2tn" path="res://craiyon_165119_pixel_art_obama_with_a_gun-removebg-preview.png" id="2_mcges"]
+[ext_resource type="Script" path="res://CharacterBody2D.gd" id="2_wurlg"]
+[ext_resource type="Script" path="res://CharacterBody2D2.gd" id="4_avvu8"]
+[ext_resource type="Texture2D" uid="uid://h3npsvesujtd" path="res://craiyon_172202_pixel_art_of_joe_biden_as_a_zombie-removebg-preview.png" id="5_mhkiy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qi66j"]
+size = Vector2(158, 214)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4tkog"]
+size = Vector2(138, 214)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Craiyon164654PixelArtGroundTexture" type="Sprite2D" parent="."]
+position = Vector2(-0.999899, 2.67029e-05)
+scale = Vector2(2.31641, 2.37305)
+texture = ExtResource("1_o4ikn")
+
+[node name="Player" type="CharacterBody2D" parent="."]
+script = ExtResource("2_wurlg")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+texture = ExtResource("2_mcges")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(6, 6)
+shape = SubResource("RectangleShape2D_qi66j")
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="." groups=["mobs"]]
+position = Vector2(806, -413)
+script = ExtResource("4_avvu8")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D2" groups=["mobs"]]
+texture = ExtResource("5_mhkiy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2" groups=["mobs"]]
+position = Vector2(1, 21)
+shape = SubResource("RectangleShape2D_4tkog")

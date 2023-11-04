@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bk7p1nyxbewq1"]
+
+[ext_resource type="Script" path="res://bullet.gd" id="1_xa63c"]
+[ext_resource type="Texture2D" uid="uid://d0ugv5ee214ku" path="res://craiyon_174525_pixel_art_bullet_shaped_like_a_penis-removebg-preview.png" id="2_0nxop"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_e0tur"]
+radius = 13.0
+height = 82.0
+
+[node name="Bullet" type="Area2D"]
+script = ExtResource("1_xa63c")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 3.8147e-06)
+scale = Vector2(0.375, 0.378418)
+texture = ExtResource("2_0nxop")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_e0tur")
