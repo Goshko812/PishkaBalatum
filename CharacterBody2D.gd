@@ -1,12 +1,13 @@
 extends CharacterBody2D
 
 @export var speed = 400
-@export var Bullet : PackedScene
-
+##@export var Bullet : PackedScene
+var bullet_scene = preload("res://Bullet.tscn")
 func shoot():
-	var bullet = Bullet.instance() # Load the bullet scene
-	get_tree().root.add_child(bullet) # Add it to the scene tree
-	bullet.position = self.position # Set its position (adjust as needed)
+	var bullet_instance = bullet_scene.instantiate()
+	add_child(bullet_instance)
+	bullet_instance.position = self.position # Set initial position
+	#bullet_instance.direction = Vector2(1, 0)  # Set initial direction
 
 
 func get_input():

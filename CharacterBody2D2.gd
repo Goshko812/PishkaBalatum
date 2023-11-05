@@ -9,5 +9,5 @@ var target_position
 
 func _physics_process(delta):
 	var speed: float = 0.01 # put wanted speed here
-	look_at(player.global_position)
+	#look_at(player.global_position)
 	self.position = lerp(self.position,player.global_position,speed)

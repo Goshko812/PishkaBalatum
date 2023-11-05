@@ -1,8 +1,28 @@
-extends Area2D
+#CharacterBody and RigidBody would also work, but you probably don't need their extra functionality
+extends Area2D    
+#class_name Bullet
+  
+#You can use this signal to alert other nodes that the bullet hit something
+#signal hit_something  
 
-var speed = 1000 # Adjust this value to control bullet speed
+#Variable for keeping track of it's velocity        
+var velocity:Vector2    
 
-func _process(delta):
-	translate(Vector2(speed * delta, 0)) # Adjust direction if needed
-	if position.x > get_viewport_rect().size.x:
-		queue_free() # Destroy the bullet when it leaves the screen
+
+#Set the velocity of the bullet  
+#Call this right after creating the bullet to make it start moving
+func launch(direction:Vector2, speed:float):    
+	velocity = direction * speed    
+
+#This is automatically called every physics update.
+func _physics_process():  
+	#Move the bullet using it's previously defined velocity  
+	#And save any collisions that may happen.
+	var collision = move_and_collide(velocity)
+
+	#If it hit something, emit the signal from earlier
+	#if collision != null:    
+		#hit_something.emit()    
+
+		#Then delete the bullet  
+		queue_free()  

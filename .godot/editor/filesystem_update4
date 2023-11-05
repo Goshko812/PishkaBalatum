@@ -1,6 +1,6 @@
 res://node_2d.tscn
-res://bullet.tscn
-res://bomboclat.tscn
-res://bullet.gd
-res://CharacterBody2D.gd
+res://CharacterBody2D2.gd
 res://Bullet.tscn
+res://bomboclat.tscn
+res://CharacterBody2D.gd
+res://bullet.gd
