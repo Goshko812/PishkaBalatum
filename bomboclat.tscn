@@ -127,5 +127,5 @@ animations = [{
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_3laat")
 animation = &"bomboclat"
-frame = 11
-frame_progress = 0.116787
+frame = 9
+frame_progress = 0.642235

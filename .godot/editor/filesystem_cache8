@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699136160
-bomboclat.tscn::PackedScene::1671312190882373970::1699135567::0::1::::<><>::uid://cd23sbowcsais::::res://Sprites/PC Computer - Deltarune - Realistic Explosion.png
-bullet.gd::GDScript::-1::1699113338::0::1::::<>Area2D<>::
-bullet.tscn::PackedScene::3155327114661754146::1699135567::0::1::::<><>::res://bullet.gd<>uid://d0ugv5ee214ku::::res://Sprites/craiyon_174525_pixel_art_bullet_shaped_like_a_penis-removebg-preview.png
+::res://::1699223161
+bomboclat.tscn::PackedScene::1671312190882373970::1699222988::0::1::::<><>::uid://cd23sbowcsais::::res://Sprites/PC Computer - Deltarune - Realistic Explosion.png
+bullet.gd::GDScript::-1::1699223100::0::1::::<>Area2D<>::
+bullet.tscn::PackedScene::3155327114661754146::1699223100::0::1::::<><>::res://bullet.gd<>uid://d0ugv5ee214ku::::res://Sprites/craiyon_174525_pixel_art_bullet_shaped_like_a_penis-removebg-preview.png
 CharacterBody2D2.gd::GDScript::-1::1699112459::0::1::::<>CharacterBody2D<>::
-CharacterBody2D.gd::GDScript::-1::1699115590::0::1::::<>CharacterBody2D<>::
+CharacterBody2D.gd::GDScript::-1::1699223192::0::1::::<>CharacterBody2D<>::
 icon.svg::CompressedTexture2D::7896695106836830039::1699108457::1699108476::1::::<><>::
-node_2d.tscn::PackedScene::13523020249159267::1699135576::0::1::::<><>::uid://cf5xdhrsr51md::::res://Sprites/craiyon_164654_pixel_art_ground_texture.png<>res://CharacterBody2D.gd<>uid://b8whna43ck2tn::::res://Sprites/craiyon_165119_pixel_art_obama_with_a_gun-removebg-preview.png<>res://CharacterBody2D2.gd<>uid://h3npsvesujtd::::res://Sprites/craiyon_172202_pixel_art_of_joe_biden_as_a_zombie-removebg-preview.png
+node_2d.tscn::PackedScene::13523020249159267::1699223192::0::1::::<><>::uid://cf5xdhrsr51md::::res://Sprites/craiyon_164654_pixel_art_ground_texture.png<>res://CharacterBody2D.gd<>uid://b8whna43ck2tn::::res://Sprites/craiyon_165119_pixel_art_obama_with_a_gun-removebg-preview.png<>res://CharacterBody2D2.gd<>uid://h3npsvesujtd::::res://Sprites/craiyon_172202_pixel_art_of_joe_biden_as_a_zombie-removebg-preview.png
 Player.gd::GDScript::-1::1699110609::0::1::::<>Area2D<>::
 README.md::TextFile::-1::1699134184::0::1::::<><>::
 ::res://Sprites/::1699134983
