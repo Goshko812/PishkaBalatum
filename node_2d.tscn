@@ -14,10 +14,11 @@ size = Vector2(138, 214)
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Craiyon164654PixelArtGroundTexture" type="Sprite2D" parent="."]
-position = Vector2(-0.999899, 2.67029e-05)
-scale = Vector2(2.31641, 2.37305)
+[node name="Background" type="Sprite2D" parent="."]
+texture_repeat = 2
 texture = ExtResource("1_5gpt2")
+region_enabled = true
+region_rect = Rect2(0, 0, 1913.62, 1647.8)
 
 [node name="Player" type="CharacterBody2D" parent="."]
 script = ExtResource("2_he18m")
