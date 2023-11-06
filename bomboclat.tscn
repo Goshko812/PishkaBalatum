@@ -129,5 +129,7 @@ script = ExtResource("1_30oeb")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_3laat")
 animation = &"explosion_animation"
+frame = 9
+frame_progress = 0.374427
 
 [connection signal="animation_looped" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_looped"]

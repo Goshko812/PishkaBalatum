@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cf5xdhrsr51md" path="res://Sprites/craiyon_164654_pixel_art_ground_texture.png" id="1_5gpt2"]
 [ext_resource type="Script" path="res://Player.gd" id="2_he18m"]
 [ext_resource type="Texture2D" uid="uid://b8whna43ck2tn" path="res://Sprites/craiyon_165119_pixel_art_obama_with_a_gun-removebg-preview.png" id="3_p81q3"]
-[ext_resource type="Script" path="res://CharacterBody2D2.gd" id="4_avvu8"]
+[ext_resource type="Script" path="res://Enemy.gd" id="4_xyjvq"]
 [ext_resource type="Texture2D" uid="uid://h3npsvesujtd" path="res://Sprites/craiyon_172202_pixel_art_of_joe_biden_as_a_zombie-removebg-preview.png" id="5_x3ltq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qi66j"]
@@ -32,13 +32,13 @@ shape = SubResource("RectangleShape2D_qi66j")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
-[node name="CharacterBody2D2" type="CharacterBody2D" parent="." groups=["mobs"]]
+[node name="Enemy" type="CharacterBody2D" parent="." groups=["mobs"]]
 position = Vector2(806, -413)
-script = ExtResource("4_avvu8")
+script = ExtResource("4_xyjvq")
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D2" groups=["mobs"]]
+[node name="Sprite2D" type="Sprite2D" parent="Enemy" groups=["mobs"]]
 texture = ExtResource("5_x3ltq")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2" groups=["mobs"]]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy" groups=["mobs"]]
 position = Vector2(1, 21)
 shape = SubResource("RectangleShape2D_4tkog")
