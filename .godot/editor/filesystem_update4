@@ -1,4 +1,5 @@
 res://node_2d.tscn
-res://Enemy.gd
+res://Player.gd
 res://Bullet.tscn
 res://bomboclat.tscn
+res://Bullett.gd

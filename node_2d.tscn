@@ -16,12 +16,15 @@ size = Vector2(138, 214)
 
 [node name="Background" type="Sprite2D" parent="."]
 texture_repeat = 2
+position = Vector2(2000, 2000)
 texture = ExtResource("1_5gpt2")
 region_enabled = true
-region_rect = Rect2(0, 0, 1913.62, 1647.8)
+region_rect = Rect2(0, 0, 4000, 4000)
 
 [node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(1974, 1985)
 script = ExtResource("2_he18m")
+metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
 texture = ExtResource("3_p81q3")
@@ -33,8 +36,9 @@ shape = SubResource("RectangleShape2D_qi66j")
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
 [node name="Enemy" type="CharacterBody2D" parent="." groups=["mobs"]]
-position = Vector2(806, -413)
+position = Vector2(3065, 1349)
 script = ExtResource("4_xyjvq")
+metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemy" groups=["mobs"]]
 texture = ExtResource("5_x3ltq")

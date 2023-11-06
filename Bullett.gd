@@ -10,7 +10,7 @@ func launch(direction: Vector2, speed: float):
 func _physics_process(delta):
 	position += velocity * delta
 
-	if position.length() > 4000:
+	if position.x < 0 or position.x > 4000 or position.y < 0 or position.y > 4000:
 		queue_free()
 
 func _on_Bullet_body_entered(body):

@@ -18,5 +18,8 @@ func get_input():
 		shoot(input_direction)
 
 func _physics_process(delta):
+	#Clamp the position to stay within a 4000x4000 area
+	position.x = clamp(position.x, 0, 4000)
+	position.y = clamp(position.y, 0, 4000)
 	get_input()
 	move_and_slide()
