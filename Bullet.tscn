@@ -17,3 +17,5 @@ texture = ExtResource("2_t8cnt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_e0tur")
+
+[connection signal="body_entered" from="." to="." method="_on_Bullet_body_entered"]
