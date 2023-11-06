@@ -1,9 +1,9 @@
-Timer
-AnimationPlayer
+CollisionShape2D
 AnimatedSprite2D
 Area2D
+Timer
+AnimationPlayer
 Marker2D
-CollisionShape2D
 Sprite2D
 CharacterBody2D
 Camera2D
