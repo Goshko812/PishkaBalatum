@@ -1,5 +1,6 @@
-[gd_scene load_steps=19 format=3 uid="uid://x2ujdl3jk1y1"]
+[gd_scene load_steps=20 format=3 uid="uid://x2ujdl3jk1y1"]
 
+[ext_resource type="Script" path="res://bomboclat.gd" id="1_30oeb"]
 [ext_resource type="Texture2D" uid="uid://cd23sbowcsais" path="res://Sprites/PC Computer - Deltarune - Realistic Explosion.png" id="1_l6wn4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ub10v"]
@@ -118,14 +119,15 @@ animations = [{
 "texture": SubResource("AtlasTexture_uvbp3")
 }],
 "loop": true,
-"name": &"bomboclat",
+"name": &"explosion_animation",
 "speed": 15.0
 }]
 
 [node name="Area2D" type="Area2D"]
+script = ExtResource("1_30oeb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_3laat")
-animation = &"bomboclat"
-frame = 9
-frame_progress = 0.642235
+animation = &"explosion_animation"
+
+[connection signal="animation_looped" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_looped"]

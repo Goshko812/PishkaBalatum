@@ -1,23 +1,29 @@
-extends Area2D    
+extends Area2D
 
-# Variable for keeping track of its velocity        
-var velocity: Vector2    
+var velocity: Vector2
+var explosion_scene = preload("res://bomboclat.tscn")
+var explosion_instance
 
-# Set the velocity of the bullet  
-# Call this right after creating the bullet to make it start moving
 func launch(direction: Vector2, speed: float):
 	velocity = direction * speed
 
-# This is automatically called every physics update.
-func _physics_process(delta):  
-	# Move the bullet using its previously defined velocity  
+func _physics_process(delta):
 	position += velocity * delta
 
-	# Check for collisions manually if needed
-	# var collision = collide_and_get_normal(velocity)
-	# if collision:
-	#   # Handle collision here
-
-	# For example, you might want to check if the bullet is out of bounds
-	if position.x > 800 or position.x < 0 or position.y > 600 or position.y < 0:
+	if position.length() > 1000:
 		queue_free()
+
+func _on_Bullet_body_entered(body):
+	if body.is_in_group("mobs"):
+		body.queue_free()
+		explosion_instance = explosion_scene.instantiate()
+		get_parent().add_child(explosion_instance)
+		explosion_instance.global_position = global_position
+
+		var animation = explosion_instance.get_node("AnimatedSprite2D")
+		animation.play("explosion_animation")
+
+		animation.connect("animation_finished", self, "_on_explosion_animation_finished")
+
+func _on_explosion_animation_finished():
+	explosion_instance.queue_free()

@@ -1,5 +1,7 @@
+res://bomboclat.tscn
+res://Bullett.gd
 res://node_2d.tscn
 res://Bullet.tscn
-res://bomboclat.tscn
-res://Player.gd
-res://Bullett.gd
+res://Bullet.gd
+res://Timer.gd
+res://bomboclat.gd
