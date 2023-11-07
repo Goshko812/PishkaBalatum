@@ -15,7 +15,9 @@ func _physics_process(delta):
 
 func _on_Bullet_body_entered(body):
 	if body.is_in_group("mobs"):
-		body.queue_free()
+		body.take_damage(20)
+		
+		##explosion logic
 		explosion_instance = explosion_scene.instantiate()
 		get_parent().add_child(explosion_instance)
 		explosion_instance.global_position = global_position

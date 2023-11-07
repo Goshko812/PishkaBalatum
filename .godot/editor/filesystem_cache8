@@ -1,15 +1,16 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699305189
+::res://::1699317677
 bomboclat.gd::GDScript::-1::1699244221::0::1::::<>Area2D<>::
-bomboclat.tscn::PackedScene::1671312190882373970::1699302520::0::1::::<><>::res://bomboclat.gd<>uid://cd23sbowcsais::::res://Sprites/PC Computer - Deltarune - Realistic Explosion.png
-Bullet.tscn::PackedScene::3155327114661754146::1699302520::0::1::::<><>::res://Bullett.gd<>uid://d0ugv5ee214ku::::res://Sprites/craiyon_174525_pixel_art_bullet_shaped_like_a_penis-removebg-preview.png
+bomboclat.tscn::PackedScene::1671312190882373970::1699302520::0::1::::<><>::res://bomboclat.gd<>uid://cd23sbowcsais
+Bullet.tscn::PackedScene::3155327114661754146::1699302520::0::1::::<><>::res://Bullett.gd<>uid://d0ugv5ee214ku
 Bullett.gd::GDScript::-1::1699302132::0::1::::<>Area2D<>::
 Enemy.gd::GDScript::-1::1699297651::0::1::::<>CharacterBody2D<>::
 icon.svg::CompressedTexture2D::7896695106836830039::1699108457::1699108476::1::::<><>::
-node_2d.tscn::PackedScene::13523020249159267::1699302549::0::1::::<><>::uid://cf5xdhrsr51md::::res://Sprites/craiyon_164654_pixel_art_ground_texture.png<>res://Player.gd<>uid://b8whna43ck2tn::::res://Sprites/craiyon_165119_pixel_art_obama_with_a_gun-removebg-preview.png<>res://Enemy.gd<>uid://h3npsvesujtd::::res://Sprites/craiyon_172202_pixel_art_of_joe_biden_as_a_zombie-removebg-preview.png
+node_2d.tscn::PackedScene::13523020249159267::1699302549::0::1::::<><>::uid://cf5xdhrsr51md
 Player.gd::GDScript::-1::1699301404::0::1::::<>CharacterBody2D<>::
 README.md::TextFile::-1::1699134184::0::1::::<><>::
-::res://Sprites/::1699305311
+XP.tscn::PackedScene::4436776294574439718::1699312588::0::1::::<><>::uid://cf6gltbypoyrb::::res://Sprites/Sprite-0001-Sheet.png
+::res://Sprites/::1699305327
 craiyon_164654_pixel_art_ground_texture.png::CompressedTexture2D::5187119161180391683::1699109214::1699134968::1::::<><>::
 craiyon_165119_pixel_art_obama_with_a_gun-removebg-preview.png::CompressedTexture2D::4748517114682231215::1699109503::1699134976::1::::<><>::
 craiyon_172202_pixel_art_of_joe_biden_as_a_zombie-removebg-preview.png::CompressedTexture2D::549941568462226093::1699111343::1699134979::1::::<><>::

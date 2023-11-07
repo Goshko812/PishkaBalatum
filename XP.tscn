@@ -89,8 +89,7 @@ radius = 8.0
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_be68w")
 animation = &"XP"
-frame = 1
-frame_progress = 0.405093
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource("CircleShape2D_x70rl")

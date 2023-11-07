@@ -1,5 +1,16 @@
 extends CharacterBody2D
 
+var health : int = 100 # You can adjust the initial health as needed
+
+func die():
+	queue_free()
+
+func take_damage(amount: int):
+	health -= amount
+	if health <= 0:
+		die()
+
+
 # Movement speed
 @export var speed = 100 
 var player_position
