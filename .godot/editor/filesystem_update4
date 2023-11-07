@@ -1,7 +1,4 @@
-res://Bullet.tscn
-res://Player.gd
 res://node_2d.tscn
+res://Bullet.tscn
 res://item1.tscn
-res://Bullett.gd
 res://item1.gd
-res://Enemy.gd

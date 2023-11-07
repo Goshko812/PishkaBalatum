@@ -14,6 +14,7 @@ func _on_increase_bullet_damage(bonus: int):
 	print("damage is now:", damage)
 
 
+
 func launch(direction: Vector2, speed: float):
 	velocity = direction * speed
 
