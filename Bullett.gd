@@ -15,8 +15,9 @@ func _on_increase_bullet_damage(bonus: int):
 
 
 
-func launch(direction: Vector2, speed: float):
+func launch(direction: Vector2, speed: float, damage_bonus: int):
 	velocity = direction * speed
+	damage+=damage_bonus
 
 func _physics_process(delta):
 	position += velocity * delta

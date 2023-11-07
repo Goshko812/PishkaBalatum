@@ -1,4 +1,8 @@
 res://node_2d.tscn
+res://bomboclat.tscn
 res://Bullet.tscn
 res://item1.tscn
+res://Bullett.gd
 res://item1.gd
+res://Player.gd
+res://XP.tscn
