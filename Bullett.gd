@@ -4,6 +4,16 @@ var velocity: Vector2
 var explosion_scene = preload("res://bomboclat.tscn")
 var explosion_instance
 
+#damage up bullshit
+var damage: int = 50
+func _ready():
+	$/root/GlobalScript.increase_bullet_damage_signal.connect(_on_increase_bullet_damage)
+func _on_increase_bullet_damage(bonus: int):
+	print("Damage increased by:", bonus)
+	damage += bonus
+	print("damage is now:", damage)
+
+
 func launch(direction: Vector2, speed: float):
 	velocity = direction * speed
 
@@ -15,7 +25,8 @@ func _physics_process(delta):
 
 func _on_Bullet_body_entered(body):
 	if body.is_in_group("mobs"):
-		body.take_damage(20)
+		print("Bullet damage:",damage)
+		body.take_damage(damage)
 		
 		##explosion logic
 		explosion_instance = explosion_scene.instantiate()

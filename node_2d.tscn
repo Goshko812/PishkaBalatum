@@ -21,22 +21,22 @@ texture = ExtResource("1_5gpt2")
 region_enabled = true
 region_rect = Rect2(0, 0, 4000, 4000)
 
-[node name="Player" type="CharacterBody2D" parent="."]
+[node name="Player" type="CharacterBody2D" parent="." groups=["player"]]
 position = Vector2(1974, 1985)
 script = ExtResource("2_he18m")
 metadata/_edit_group_ = true
 
-[node name="Sprite2D" type="Sprite2D" parent="Player"]
+[node name="Sprite2D" type="Sprite2D" parent="Player" groups=["player"]]
 texture = ExtResource("3_p81q3")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" groups=["player"]]
 position = Vector2(6, 6)
 shape = SubResource("RectangleShape2D_qi66j")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
 [node name="Enemy" type="CharacterBody2D" parent="." groups=["mobs"]]
-position = Vector2(3065, 1349)
+position = Vector2(3460, 559)
 script = ExtResource("4_xyjvq")
 metadata/_edit_group_ = true
 
@@ -44,5 +44,17 @@ metadata/_edit_group_ = true
 texture = ExtResource("5_x3ltq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy" groups=["mobs"]]
+position = Vector2(1, 21)
+shape = SubResource("RectangleShape2D_4tkog")
+
+[node name="Enemy2" type="CharacterBody2D" parent="." groups=["mobs"]]
+position = Vector2(1967, 1543)
+script = ExtResource("4_xyjvq")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemy2" groups=["mobs"]]
+texture = ExtResource("5_x3ltq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy2" groups=["mobs"]]
 position = Vector2(1, 21)
 shape = SubResource("RectangleShape2D_4tkog")

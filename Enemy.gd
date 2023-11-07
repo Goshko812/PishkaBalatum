@@ -2,14 +2,20 @@ extends CharacterBody2D
 
 var health : int = 100 # You can adjust the initial health as needed
 
+func drop_item():
+	var item_instance = preload("res://item1.tscn").instantiate()
+	get_parent().add_child(item_instance)
+	item_instance.global_position = global_position
+
 func die():
+	drop_item()
 	queue_free()
 
 func take_damage(amount: int):
 	health -= amount
+	print("Enemy took", amount, "damage. Remaining health:", health)
 	if health <= 0:
-		die()
-
+		call_deferred("die") #no idea why i use this i got this error - drop_item(): Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
 
 # Movement speed
 @export var speed = 100 

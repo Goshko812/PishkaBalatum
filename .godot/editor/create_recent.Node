@@ -1,9 +1,9 @@
 CollisionShape2D
-AnimatedSprite2D
+Sprite2D
 Area2D
+AnimatedSprite2D
 Timer
 AnimationPlayer
 Marker2D
-Sprite2D
 CharacterBody2D
 Camera2D

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bll5qhamciad8"]
+
+[ext_resource type="Script" path="res://item1.gd" id="1_iohoe"]
+[ext_resource type="Texture2D" uid="uid://bpik48pt5xfgf" path="res://Sprites/item1.png" id="1_r8l1b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xr263"]
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_iohoe")
+
+[node name="Item1" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_r8l1b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 2)
+shape = SubResource("RectangleShape2D_xr263")
+
+[connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]
