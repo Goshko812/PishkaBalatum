@@ -6,14 +6,6 @@ var explosion_instance
 
 #damage up bullshit
 var damage: int = 50
-func _ready():
-	$/root/GlobalScript.increase_bullet_damage_signal.connect(_on_increase_bullet_damage)
-func _on_increase_bullet_damage(bonus: int):
-	print("Damage increased by:", bonus)
-	damage += bonus
-	print("damage is now:", damage)
-
-
 
 func launch(direction: Vector2, speed: float, damage_bonus: int):
 	velocity = direction * speed

@@ -2,13 +2,15 @@ extends CharacterBody2D
 
 var health : int = 100 # You can adjust the initial health as needed
 
-func drop_item():
-	var item_instance = preload("res://item1.tscn").instantiate()
-	get_parent().add_child(item_instance)
-	item_instance.global_position = global_position
+func drop_xp():
+	var xp_instance = preload("res://XP.tscn").instantiate()
+	get_parent().add_child(xp_instance)
+	xp_instance.global_position = global_position
+	var animation = xp_instance.get_node("XP")
+	animation.play("XP")
 
 func die():
-	drop_item()
+	drop_xp()
 	queue_free()
 
 func take_damage(amount: int):
