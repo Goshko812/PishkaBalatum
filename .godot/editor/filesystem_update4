@@ -1,7 +1,6 @@
 res://node_2d.tscn
-res://Timer.gd
+res://XP.tscn
+res://XP.gd
+res://bomboclat.tscn
 res://Bullet.tscn
 res://item1.tscn
-res://XP.tscn
-res://Timerr.gd
-res://Main.gd

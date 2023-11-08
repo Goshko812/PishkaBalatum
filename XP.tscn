@@ -1,6 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://b4hhb7kds3bfy"]
+[gd_scene load_steps=15 format=3 uid="uid://b4hhb7kds3bfy"]
 
 [ext_resource type="Texture2D" uid="uid://cf6gltbypoyrb" path="res://Sprites/Sprite-0001-Sheet.png" id="1_dgu4s"]
+[ext_resource type="Script" path="res://XP.gd" id="2_lwww6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tnqej"]
 atlas = ExtResource("1_dgu4s")
@@ -89,6 +90,9 @@ radius = 8.0
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_be68w")
 animation = &"XP"
+script = ExtResource("2_lwww6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_x70rl")
+
+[connection signal="body_entered" from="." to="XP" method="_on_Area2D_body_entered"]
