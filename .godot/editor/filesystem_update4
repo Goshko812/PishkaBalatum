@@ -1,8 +1,7 @@
-res://bomboclat.tscn
-res://Bullett.gd
-res://item1.tscn
-res://item1.gd
 res://node_2d.tscn
+res://Timer.gd
 res://Bullet.tscn
+res://item1.tscn
 res://XP.tscn
-res://Enemy.gd
+res://Timerr.gd
+res://Main.gd
