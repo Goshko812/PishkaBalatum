@@ -1,6 +1,7 @@
-res://node_2d.tscn
 res://XP.tscn
-res://XP.gd
-res://bomboclat.tscn
+res://Main.gd
+res://node_2d.tscn
 res://Bullet.tscn
 res://item1.tscn
+res://bomboclat.tscn
+res://Enemy.tscn

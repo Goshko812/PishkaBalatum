@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://ctl1d4sqb2asd"]
+
+[ext_resource type="Script" path="res://Enemy.gd" id="1_qjq3w"]
+[ext_resource type="Texture2D" uid="uid://h3npsvesujtd" path="res://Sprites/craiyon_172202_pixel_art_of_joe_biden_as_a_zombie-removebg-preview.png" id="2_mh08a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2yndv"]
+size = Vector2(138, 214)
+
+[node name="Enemy" type="CharacterBody2D" groups=["mobs"]]
+position = Vector2(3460, 559)
+script = ExtResource("1_qjq3w")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." groups=["mobs"]]
+texture = ExtResource("2_mh08a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["mobs"]]
+position = Vector2(1, 21)
+shape = SubResource("RectangleShape2D_2yndv")
