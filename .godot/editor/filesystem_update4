@@ -1,6 +1,6 @@
+res://Enemy.tscn
 res://XP.gd
-res://XP.tscn
 res://node_2d.tscn
 res://Bullet.tscn
 res://item1.tscn
-res://Enemy.tscn
+res://XP.tscn
