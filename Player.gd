@@ -22,6 +22,7 @@ func check_level_up():
 func level_up():
 	level += 1
 	xp_to_level_up = calculate_next_level_xp()
+	print("new level up current level is , ",level)
 # Add additional logic for stat increases, new abilities, etc.
 # Function to calculate XP required for the next level
 func calculate_next_level_xp() -> int:
