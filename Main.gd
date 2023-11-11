@@ -2,6 +2,7 @@ extends Node
 
 var enemy_scene = preload("res://Enemy.tscn")
 
+
 func _ready():
 	$Timer.start()
 

@@ -4,6 +4,29 @@ extends CharacterBody2D
 @export var damagemod = 0
 var bullet_scene = preload("res://Bullet.tscn")
 
+###
+var xp : int = 0
+var level : int = 1
+var xp_to_level_up : int = 100
+# Function to gain XP
+func gain_xp(amount: int):
+	xp += amount
+	check_level_up()
+	print("XP is now , ",xp)
+# Function to check if the player should level up
+func check_level_up():
+	if xp >= xp_to_level_up:
+		xp -= xp_to_level_up
+		level_up()
+# Function to handle level up
+func level_up():
+	level += 1
+	xp_to_level_up = calculate_next_level_xp()
+# Add additional logic for stat increases, new abilities, etc.
+# Function to calculate XP required for the next level
+func calculate_next_level_xp() -> int:
+	return level * 100
+###
 
 func shoot(direction: Vector2):
 	var bullet_instance = bullet_scene.instantiate()

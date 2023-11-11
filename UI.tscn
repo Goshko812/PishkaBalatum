@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://dka5htqua6xfx"]
+
+[ext_resource type="Script" path="res://UI.gd" id="1_qrxmo"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_qrxmo")
+
+[node name="Level" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="XP" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0

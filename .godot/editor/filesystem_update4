@@ -1,6 +1,6 @@
-res://Enemy.tscn
-res://XP.gd
 res://node_2d.tscn
-res://Bullet.tscn
-res://item1.tscn
-res://XP.tscn
+res://XP.gd
+res://Player.gd
+res://UI.tscn
+res://UI.gd
+res://Main.gd
