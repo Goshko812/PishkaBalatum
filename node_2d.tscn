@@ -3,10 +3,10 @@
 [ext_resource type="Script" path="res://Main.gd" id="1_n04ce"]
 [ext_resource type="Script" path="res://Player.gd" id="2_he18m"]
 [ext_resource type="Texture2D" uid="uid://cfx8ximuwiq6g" path="res://Sprites/grass.png" id="2_xlq0y"]
-[ext_resource type="Texture2D" uid="uid://b8whna43ck2tn" path="res://Sprites/craiyon_165119_pixel_art_obama_with_a_gun-removebg-preview.png" id="3_p81q3"]
+[ext_resource type="Texture2D" uid="uid://caoinm7vmr6e5" path="res://Sprites/pomni.png" id="4_202ob"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qi66j"]
-size = Vector2(158, 214)
+size = Vector2(151, 383)
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_n04ce")
@@ -29,10 +29,11 @@ script = ExtResource("2_he18m")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Player" groups=["player"]]
-texture = ExtResource("3_p81q3")
+texture_filter = 1
+texture = ExtResource("4_202ob")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" groups=["player"]]
-position = Vector2(6, 6)
+position = Vector2(3.5, 17.5)
 shape = SubResource("RectangleShape2D_qi66j")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]

@@ -1,2 +1,5 @@
 res://node_2d.tscn
 res://UI.tscn
+res://Player.gd
+res://item1.gd
+res://Bullett.gd

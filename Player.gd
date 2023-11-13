@@ -22,6 +22,9 @@ func check_level_up():
 func level_up():
 	level += 1
 	xp_to_level_up = calculate_next_level_xp()
+	var item_instance = preload("res://item1.tscn").instantiate()
+	get_parent().add_child(item_instance)
+	item_instance.global_position = global_position
 	print("new level up current level is , ",level)
 # Add additional logic for stat increases, new abilities, etc.
 # Function to calculate XP required for the next level

@@ -5,7 +5,7 @@ var explosion_scene = preload("res://bomboclat.tscn")
 var explosion_instance
 
 #damage up bullshit
-var damage: int = 50
+var damage: int = 25
 
 func launch(direction: Vector2, speed: float, damage_bonus: int):
 	velocity = direction * speed
