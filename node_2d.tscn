@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://gsys3c1vq56"]
 
-[ext_resource type="Texture2D" uid="uid://cf5xdhrsr51md" path="res://Sprites/craiyon_164654_pixel_art_ground_texture.png" id="1_5gpt2"]
 [ext_resource type="Script" path="res://Main.gd" id="1_n04ce"]
 [ext_resource type="Script" path="res://Player.gd" id="2_he18m"]
+[ext_resource type="Texture2D" uid="uid://cfx8ximuwiq6g" path="res://Sprites/grass.png" id="2_xlq0y"]
 [ext_resource type="Texture2D" uid="uid://b8whna43ck2tn" path="res://Sprites/craiyon_165119_pixel_art_obama_with_a_gun-removebg-preview.png" id="3_p81q3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qi66j"]
@@ -15,13 +15,15 @@ script = ExtResource("1_n04ce")
 wait_time = 2.5
 
 [node name="Background" type="Sprite2D" parent="."]
+texture_filter = 3
 texture_repeat = 2
 position = Vector2(2000, 2000)
-texture = ExtResource("1_5gpt2")
+texture = ExtResource("2_xlq0y")
 region_enabled = true
 region_rect = Rect2(0, 0, 4000, 4000)
 
 [node name="Player" type="CharacterBody2D" parent="." groups=["player"]]
+texture_filter = 1
 position = Vector2(1974, 1985)
 script = ExtResource("2_he18m")
 metadata/_edit_group_ = true
